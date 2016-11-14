@@ -9,7 +9,7 @@ Page({
       url: 'https://sdk.cn/api/article/juhe', //仅为示例，并非真实的接口地址
       data: {
         key: 'ceb51082d5d933af12b374d058369867' ,
-        count: 1,
+        count: 6,
         sort_time: 1
       },
       header: {

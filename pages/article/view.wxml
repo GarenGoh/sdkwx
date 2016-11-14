@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="article-view">
     <view class="article">
-        <image class="act-img" src="{{article.image_url}}"></image>
+        <image class="act-img" src="{{article.imgUrl}}"></image>
         <view class="title">
             <text class="h3 text-h">{{article.title}}</text>
         </view>

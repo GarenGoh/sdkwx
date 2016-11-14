@@ -15,7 +15,7 @@ Page({
     var that = this;
     console.log(that.__route__);
     wx.request({
-      url: 'https://sdk.cn/api/article/wx-view',
+      url: 'https://sdk.cn/api/article/wxarticleview',
       data: {
         id: params.id
       },
@@ -25,9 +25,9 @@ Page({
       success: function(res) {
         console.log(res.data.article);
         var article = res.data.article;
-        WxParse.wxParse('html',article.content,that);
+        WxParse.wxParse('html',article.description,that);
         that.setData({
-          data:article
+          article:article
         })
       }
     })
